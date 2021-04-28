@@ -1,4 +1,4 @@
-# automated-elk-stack-deployment
+# Automated ELK Stack Deployment
 Project 1 of Cybersecurity Boot Camp
 
 I used the files in this repository to configure the attached network diagram.
@@ -14,3 +14,7 @@ This ReadMe file contains the following
   - Beats in Use
   - Machines Being Monitered
 - How to Use the Ansible Build
+
+
+### Description of Topology
+
