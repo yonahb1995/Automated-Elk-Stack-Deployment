@@ -1,12 +1,12 @@
-## Automated ELK Stack Deployment
+# Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
 
 ![Link to Network Diagram](https://github.com/Howmanylights/automated-elk-stack-deployment/blob/main/Diagrams/Network%20Diagram.pdf)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+I used the following files to generate and configure the network pictured above. Additionally, these YAML files may be used to install and configure select pieces of the full network, such as metricbeat.
 
-  - _TODO: Enter the playbook file._
+[Link to YAML Files](https://github.com/Howmanylights/automated-elk-stack-deployment/tree/main/Ansible)
 
 This document contains the following details:
 - Description of the Topologu
