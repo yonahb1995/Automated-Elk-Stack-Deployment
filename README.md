@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Link to Network Diagram](https://github.com/Howmanylights/automated-elk-stack-deployment/blob/main/Diagrams/Network%20Diagram.pdf)
+[Link to Network Diagram](https://github.com/Howmanylights/automated-elk-stack-deployment/blob/main/Diagrams/Network%20Diagram.pdf)
 
 I used the following files to generate and configure the network pictured above. Additionally, these YAML files may be used to install and configure select pieces of the full network, such as metricbeat.
 
