@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![Link to Network Diagram](Diagrams/Network Diagram.pdf)
+![Link to Network Diagram](https://github.com/Howmanylights/automated-elk-stack-deployment/blob/main/Diagrams/Network%20Diagram.pdf)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
