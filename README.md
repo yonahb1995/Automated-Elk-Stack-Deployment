@@ -9,7 +9,7 @@ I used the following files to generate and configure the network pictured above.
 [Link to YAML Files](https://github.com/Howmanylights/automated-elk-stack-deployment/tree/main/Ansible)
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -19,24 +19,24 @@ This document contains the following details:
 
 ### Description of the Topology
 
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+I created this network in order to expose and moniter a load balanced instance of DVWA, the Damn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancing ensures that the application will be highly redundant, in addition to restricting access to the network. Additionally, a load balancer will help protect my webservers from overloaded traffic or other forms of denial of service attacks.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+I've connected these webservers through a singular jumpbox in order to restrict general access. By configuring my network security groups, I've allowed access to the webservers via jumpbox *only*. Furthermore, I've also allowed access to the jumpbox via my local machine via ssh key pairings.
+
+
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the system logs and system level cpu usage.
+Filebeat will record system logs and centralize in our Kibana dashboard. Additonally, Metricbeat will moniter system cpu usage, memory, disk usage, and other system level processes.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Name     | Function  | IP Address | Operating System |
+|----------|-----------|------------|------------------|
+| Jumpbox  | Gateway   | 10.0.0.4   | Linux            |
+| ELK-VM   | ELK       | 10.1.0.4   | Linux            |
+| Web-VM-1 | Webserver | 10.0.0.5   | Linux            |
+| Web-VM-2 | Webserver | 10.0.0.6   | Linux            |
 
 ### Access Policies
 
