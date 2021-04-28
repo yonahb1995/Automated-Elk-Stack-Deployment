@@ -18,3 +18,4 @@ This ReadMe file contains the following
 
 ### Description of Topology
 
+I created this network in order to expose and moniter a load-balanced instance of DVWA (Damn Vulnerable Web Application).
