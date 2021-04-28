@@ -72,14 +72,17 @@ The following screenshot displays the result of running `docker ps` after succes
 [Link to succesful `docker ps` command](https://github.com/Howmanylights/automated-elk-stack-deployment/blob/main/Images/dockerPS.PNG)
 
 ### Target Machines & Beats
-This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+I configured the ELK server to monitor the following machines:
+- Web-VM-1
+- Web-VM-2
 
-We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+I installed the following Beats on these machines:
+- Filebeat
+- Metricbeat
 
-These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+These Beats allow me to collect the following information from each machine:
+- Filebeat will allow me to moniter system log files and collect them into a convienent Kibana dashboard.
+- Metricbeat will allow me to periodically collect metrics from systems and services running on the webservers.  
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
