@@ -42,33 +42,34 @@ The configuration details of each machine may be found below.
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the Jumobox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses: 71.63.246.82.
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by The Ansible Container within the Jumpbox. At the time of writing, this container holds a public IP of 104.42.188.201.
+
+Note that both Public IP addresses are dynamic and subject to change.
+
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Name     | Publicly Accesible | Allowed IP Addresses |
+|----------|--------------------|----------------------|
+| Jumpbox  | No                 | 71.63.246.82         |
+| Elk-VM   | No                 | 104.42.188.201       |
+| Web-VM-1 | No                 | 104.42.188.201       |
+| Web-VM-2 | No                 | 104.42.188.201       |
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+I used Ansible to automate configuration of the ELK virtual machine. In lieu of manual configuration, automatic configurtation is advantageous due to how it allows me to scale up the network as large as I need to.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- Installs docker.io, python3-pip, and the Docker module
+- Increases virtual memory, and allows the system to access and use the increased virtual memory
+- Downloads and launches the docker elk container, and enables the docker service on boot
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+[Link to succesful `docker ps` command](https://github.com/Howmanylights/automated-elk-stack-deployment/blob/main/Images/dockerPS.PNG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
